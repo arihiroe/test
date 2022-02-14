@@ -1,0 +1,308 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #FFF;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.readmore {
+  text-align: center;
+}
+
+.readmore a {
+  padding-bottom: 1px;
+  color: #333;
+  position: relative;
+}
+
+.readmore a::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.readmore a::after:hover {
+  opacity: 0;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+header {
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: #FFF;
+}
+
+header .logo {
+  width: 145px;
+  margin: 20px 0;
+}
+
+header .logo a {
+  display: inline-block;
+}
+
+header .menu {
+  background-color: black;
+  color: #FFF;
+}
+
+header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px 0;
+}
+
+header .menu ul li {
+  margin-left: 60px;
+}
+
+header .menu ul li:first-child {
+  margin-left: 0;
+}
+
+.pickup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 150px;
+  margin-bottom: 60px;
+}
+
+.pickup .article {
+  width: 30%;
+}
+
+.pickup .text {
+  margin: 5px 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main {
+  width: 70%;
+}
+
+main dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2px 0;
+}
+
+main dd {
+  margin-left: 10px;
+  right: 0;
+}
+
+main h2 {
+  font-weight: bold;
+}
+
+main .text {
+  font-size: 1.4rem;
+  padding: 5px 10px;
+}
+
+aside {
+  width: 25%;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.author {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.author img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.author .side-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.author p {
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.ranking {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.ranking article {
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.4px;
+}
+
+.archive {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.archive ul {
+  border-top: solid 1px #333;
+}
+
+.archive li {
+  text-align: left;
+  border-bottom: solid 1px #333;
+  padding: 20px;
+}
+
+footer {
+  font-size: 1.4rem;
+  background-color: #F7F7F7;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1.0rem;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.item {
+  width: 32%;
+}
+
+.item h3 {
+  text-align: left;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.item .about .text {
+  margin-bottom: 20px;
+}
+
+.item .about ul {
+  margin: 20px 0;
+}
+
+.item .about li {
+  margin-bottom: 5px;
+}
+
+.item .about .arrow {
+  position: relative;
+  display: inline-block;
+  padding-left: 16px;
+  color: #333;
+}
+
+.item .about .arrow:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #333;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+  content: '';
+}
+
+.item .menu ul {
+  border-top: solid 1px #777777;
+}
+
+.item .menu li {
+  text-align: left;
+  border-bottom: solid 1px #777777;
+  padding: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .menu {
+    overflow-x: scroll;
+  }
+  .pickup {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pickup .article {
+    width: 100%;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

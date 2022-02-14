@@ -1,0 +1,51 @@
+.btn {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 2px solid black;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+
+.btn::before, .btn::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  top: 0;
+  background-color: black;
+  z-index: -1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.btn::before {
+  left: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.btn::after {
+  right: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.btn:hover::before {
+  -webkit-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+}
+
+.btn:hover::after {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+/*# sourceMappingURL=style.css.map */
